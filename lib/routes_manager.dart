@@ -1,5 +1,8 @@
-import 'package:chat_app/presentation/friends_screen/friends_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/chat/chat_screen.dart';
+import 'screens/friends_screen/friends_screen.dart';
+
 
 class Routes {
   static const String friendsScreen = '/';
@@ -13,6 +16,8 @@ class RoutesManager {
     switch (settings.name) {
       case Routes.friendsScreen:
         return MaterialPageRoute(builder: (_) => const FriendsScreen());
+      case Routes.chatScreen :
+        return MaterialPageRoute(builder: (_) => const ChatScreen()) ;
       default:
         return undefinedRoute();
     }
