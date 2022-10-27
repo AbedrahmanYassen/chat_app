@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../app/resources/color_manager.dart';
-import '../../app/resources/strings-manager.dart';
-import '../../widgets/friends_screen_widgets/Title_search_bar.dart';
-import '../../widgets/friends_screen_widgets/chats_part/chats_part.dart';
-import '../../widgets/friends_screen_widgets/recent_friends_bar.dart';
+import '../app/resources/color_manager.dart';
+import '../app/resources/strings-manager.dart';
+import '../widgets/friends_screen_widgets/Title_search_bar.dart';
+import '../widgets/friends_screen_widgets/chats_part/chats_part.dart';
+import '../widgets/friends_screen_widgets/recent_friends_bar.dart';
 
 
 class FriendsScreen extends StatelessWidget {

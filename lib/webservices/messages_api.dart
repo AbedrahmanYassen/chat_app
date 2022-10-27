@@ -1,20 +1,18 @@
+import 'dart:async';
+import 'dart:convert';
+
 import 'package:chat_app/app/general/base_urls_constants.dart';
-import 'package:dio/dio.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert' as convert;
+import '../model/message.dart';
 
-abstract class HTTPRequest {
-  Future<Response>? execute(String user, String userFriend);
-}
+class MessagesRequest  {
+  static Stream<QuerySnapshot<Map<String, dynamic>>> getMessages() => FirebaseFirestore.instance.collection("messages").snapshots();
 
-class MessagesRequest implements HTTPRequest {
-  final Dio dio = Dio();
-  @override
-  Future<Response>? execute(String user, String userFriend) {
-    try {
-      final messagesForTheCurrentUser = dio.get(BaseUrlsConstants.baseUrlChats);
-      return messagesForTheCurrentUser;
-    } on DioError catch (e) {
-      execute(user, userFriend);
-    }
-    return null;
-  }
+
 }
+//05975018960595902228
+

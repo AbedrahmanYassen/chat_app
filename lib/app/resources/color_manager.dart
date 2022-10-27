@@ -8,11 +8,10 @@ class ColorManager {
   static Color whiteWith58Transperncy = const Color(0x94FFFFFF);
   static Color medGrey = const Color(0xff373E4E);
   static Color grey = const Color(0xff7A8194);
-  static Color textFieldMessagesSenderColor = const Color(0xff3D4354) ;
+  static Color textFieldMessagesSenderColor = const Color(0xff3D4354);
   static Color blackWith45Transperncy = const Color(0x73000000);
   static Color black = const Color(0xff000000);
   //TODO: I need to rename the color manager variables
   static Color grey2 = const Color(0xff9398A7);
-
-
+  static Color nonUserMessagesColor = const Color(0xff7A8194);
 }
